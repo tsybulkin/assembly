@@ -18,7 +18,7 @@ t() ->
 
 t(Chromo, Len) ->
 	Coverage = 7,
-	{ok,Ref} = file:read_file("bwt_files/"++Chromo++".ref"),
+	{ok,Ref} = file:read_file("data/"++Chromo++".ref"),
 	D = round(2*Len/Coverage),
 	io:format("Max distance between reads: ~p~n",[D]),
 	Entire_seq = binary_to_list(Ref),

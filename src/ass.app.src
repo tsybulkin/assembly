@@ -1,0 +1,12 @@
+{application, ass,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]}
+  %{mod, { bwt_app, []}},
+  %{env, [{bwt_files, "bwt_files"}]}
+ ]}.
